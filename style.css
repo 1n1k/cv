@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+
+body {
+    font-family: 'Raleway' , sans-serif;
+    font-size: 15px;
+    background: antiquewhite;
+    /* font-weight: 900; */
+    color: #fff;
+}
+
+.container {
+    max-width: 900px;
+    margin: auto;
+}
+
+h1 , h3 {
+    text-decoration: underline;
+}
+
+.info {
+    display: flex;
+}
+
+.info-photo {
+    text-align: center;
+    margin-right: 15px;
+}
+
+.photo {
+    border-radius: 20px;
+    box-shadow: 8px 8px 14px rgba(0, 0, 0, 0.5);
+}
+
+.info-text {
+    background: lightsalmon;
+}
+
+.hobbies {
+    background: salmon;
+}
+
+.hobbies ol {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.hobbies ol li {
+    padding: 5px;
+} 
+
+.hobbies ol li:nth-child(even) {
+    background: #fff;
+    color: black;
+    border-radius: 10px;
+}
+
+.table {
+    width: 100%;
+}
+
+.table tr td{
+    padding-right: 20px;
+}
+
+.table tr td:hover , .table tr th:hover {
+    background: orange;
+    transition: all .3s;
+    cursor: default;
+}
+
+.table tr:nth-child(even){
+    background: salmon;
+}
+
+
+
+
+.job {
+    background: darksalmon;
+}
+
+.contact {
+    background: orange;
+}
+
+.contact label{
+    display: block;
+    margin-bottom: 10px;
+}
+
+.form-group input , textarea{
+    background: transparent;
+    width: 100%;
+    box-sizing: border-box;
+    border: none;
+    border-bottom: 2px solid black;
+    margin-bottom: 10px;
+    font-family: inherit;
+}
+
+.form-row {
+    display: flex;
+}
+
+.form-row .form-group {
+    width: 50%;
+    margin-right: 20px;
+    /* box-sizing: border-box; */
+}
+
+.module {
+    border-radius: 15px;
+    padding: 15px;
+    margin-bottom: 15px;
+    box-shadow: 8px 8px 14px rgba(0, 0, 0, 0.5);
+}
+
+.btn {
+    text-decoration: none;
+    background: darkorchid;
+    border: none;
+    color: #fff;
+    font-family: inherit;
+}
+
+.btn:hover {
+    background: purple;
+    transition: all 0.5s;
+}
+
+.btn:active {
+    background: red;
+}
+
+.btn:visited {
+    background: black;
+}
+
+@media (max-width: 650px) {
+    .info {
+        display: block;
+    }
+
+    .container {
+        max-width: 600px;
+    }
+
+    .form-row {
+        display: block;
+    }
+
+    .form-row .form-group {
+        width: 100%;
+    }
+}
